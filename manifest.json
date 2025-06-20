@@ -2,22 +2,22 @@
   "name": "Voice Clone Studio",
   "short_name": "VoiceClone",
   "description": "Professionelle Audio-Software für Aufnahme, Klonen und Bearbeitung",
-  "start_url": ".",
+  "id": "/audio-studio-pwa/",
+  "start_url": "/audio-studio-pwa/",
   "display": "standalone",
   "background_color": "#0f0f23",
   "theme_color": "#6366f1",
   "orientation": "portrait",
-  "categories": ["audio", "productivity", "tools"],
   "lang": "de",
   "icons": [
     {
-      "src": "logo.png",  // GEÄNDERT: Relativer Pfad
+      "src": "/audio-studio-pwa/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "logo.png",  // GEÄNDERT: Relativer Pfad
+      "src": "/audio-studio-pwa/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
