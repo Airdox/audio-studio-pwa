@@ -2,36 +2,35 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <!-- GEÄNDERT: Relativer Pfad -->
+    <link rel="icon" type="image/png" href="logo.png" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Audio Studio - Professionelle Audio-App</title>
-    <meta name="description" content="Professionelle Audio-Software für Aufnahme, Upload und Bearbeitung von Audiodateien" />
+    <title>Voice Clone Studio - Professionelle Audio-App</title>
+    <meta name="description" content="Professionelle Audio-Software für Aufnahme, Klonen und Bearbeitung von Audiodateien" />
     
-    <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#6366f1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Audio Studio" />
+    <meta name="apple-mobile-web-app-title" content="Voice Clone Studio" />
     
-    <!-- Manifest -->
-    <link rel="manifest" href="/manifest.json" />
+    <!-- GEÄNDERT: Relativer Pfad -->
+    <link rel="manifest" href="manifest.json" />
     
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="/logo.png" />
+    <!-- GEÄNDERT: Relativer Pfad -->
+    <link rel="apple-touch-icon" href="logo.png" />
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="data:application/octet-stream;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC50c3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykhKS5yZW5kZXIoCiAgPFN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9TdHJpY3RNb2RlPiwKKQo=" as="script" />
-    <script type="module" crossorigin src="/assets/index-B6R7kkze.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BtpdOWPY.css">
+    <!-- JS/CSS Pfade waren schon relativ, das ist gut -->
+    <script type="module" crossorigin src="./assets/index-B6R7kkze.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BtpdOWPY.css">
   </head>
   <body>
     <div id="root"></div>
     
-    <!-- PWA Service Worker Registration -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          // GEÄNDERT: Relativer Pfad
+          navigator.serviceWorker.register('sw.js') 
             .then((registration) => {
               console.log('SW registered: ', registration);
             })

@@ -1,8 +1,8 @@
 {
-  "name": "Audio Studio",
-  "short_name": "AudioStudio",
-  "description": "Professionelle Audio-Software für Aufnahme, Upload und Bearbeitung",
-  "start_url": "/",
+  "name": "Voice Clone Studio",
+  "short_name": "VoiceClone",
+  "description": "Professionelle Audio-Software für Aufnahme, Klonen und Bearbeitung",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#0f0f23",
   "theme_color": "#6366f1",
@@ -11,19 +11,16 @@
   "lang": "de",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo.png",  // GEÄNDERT: Relativer Pfad
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",  // GEÄNDERT: Relativer Pfad
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
-    },
-    {
-      "src": "logo.png",
-      "sizes": "192x192",
-      "type": "image/png"
     }
-  ],
-  "permissions": ["microphone", "storage"],
-  "features": ["microphone", "audio"],
-  "scope": "/",
-  "prefer_related_applications": false
+  ]
 }
